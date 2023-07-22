@@ -6,7 +6,7 @@ body {
 }
 
 *{
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
 /* 
@@ -19,7 +19,7 @@ body {
  twitter: #4dadf2;
 */
 
-.form-container{
+.form-container {
     background: white;
     margin: 150px auto;
     width: 400px;
@@ -28,11 +28,11 @@ body {
         padding: 20px;
     }
 
-   form h3{
+   form h3 {
         text-align: center;
     }
 
-    form .input-container{
+    form .input-container {
         position: relative;
         margin-bottom: 15px;
 
@@ -44,27 +44,29 @@ body {
         border-radius: 25px;
     }
 
-    form input[type="submit"]{
+    form input[type="submit"] {
         border: 0;
         background: red;
         color: white;
         font-weight: bold;
+        margin-bottom: 20px;
     }
 
     form .input-container input {
         border: 1px solid #E4E4E4;
         color: #818181;
         padding: 0 55px 0 25px;
+        font-size: 1rem;
         
     }
 
-    form .input-container input::placeholder{
+    form .input-container input::placeholder {
         color: #818181;
     }
 
-    svg {
+    form .input-container svg{
         position: absolute;
-        right: 20px;
+        right: 25px;
         top: calc(50% - 12px);
         color: #818181;
     }
@@ -75,13 +77,56 @@ body {
         color: #818181;
     }
 
-    .options-container .checkbox-container, a {
+    .options-container .checkbox-container, .options-container a {
         display: inline-block;
         width: 50%;
     }
 
-    .options-container a {
+    a {
         text-align: right;
         color: red;
         text-decoration: none;
     }
+
+    form p {
+        color: #818181;
+        text-align: center;
+    }
+
+    form .social-media-container {
+        margin: 20px auto;
+        width: fit-content;
+    }
+
+    form .social-media-container .icon-container {
+        background: #375c98;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: relative;
+    }
+    form .social-media-container .icon-container:nth-child(2) {
+        background: #C54F33;
+    }
+
+    form .social-media-container .icon-container:nth-child(3) {
+        background: #4dadf2;
+    }
+
+    form .social-media-container .icon-container svg {
+        position: absolute;
+        top: calc(50% - 12px);
+        left: calc(50% - 12px);
+        color: white;
+    }
+
+    hr{
+        border-color: #847a7a27;
+    }
+
+   .footer{
+   
+    width: fit-content;
+    margin: 20px auto;
+   }
