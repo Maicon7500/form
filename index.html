@@ -6,7 +6,9 @@
     <title>Maicon Santos</title>
     <link href="style.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="http://s2.glbimg.com/z_gIOSUdsxyNGClgVLYVBHBziyw=/0x0:400x400/400x400/s.glbimg.com/po/tt2/f/original/2016/05/20/new-google-favicon-logo.png">
+    <script src="script.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
+    
 </head>
 <body>
     
@@ -14,12 +16,12 @@
         <form>
             <h3>SIGN IN</h3>
                 <div class="input-container">
-                    <input type="text" placeholder="Username">
+                    <input type="text" placeholder="Username" id="login">
                     <i data-feather="user"></i>
                 </div>
 
                 <div class="input-container">
-                    <input type="password" placeholder="Password">
+                    <input type="password" placeholder="Password" id="senha">
                     <i data-feather="lock"></i>
                 </div>
 
@@ -27,10 +29,10 @@
                     <div class="checkbox-container">
                         <input type="checkbox" name="remember" id="remember">
                         <label for="remember">Remember me</label>
-                    </div><a href="google.com">Reset Password</a>
+                    </div><a href="https://www.google.com/">Reset Password</a>
                 </div>
 
-                    <input type="submit" value="Sign In">
+                    <input type="submit" value="Sign In" onclick="logar(); return false"> 
                     <p>or Sign In with</p>
                     <div class="social-media-container">
                         <div class="icon-container">
@@ -46,7 +48,7 @@
                         </div>
                     </div>
                     <hr>
-                    <p class="footer">Do not have an account? <a href="google.com">Sign Up now</a></p>
+                    <p class="footer">Do not have an account? <a href="https://www.google.com/">Sign Up now</a></p>
         </form>
        
     </div>
