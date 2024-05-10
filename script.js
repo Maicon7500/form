@@ -4,6 +4,7 @@ function logar(){
     var senha = document.getElementById('senha').value;
 
     if(login == 'admin' && senha == 'admin'){
+        location.href = "home.html"
         alert('Sucesso');
 
     }else{
